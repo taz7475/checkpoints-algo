@@ -1,0 +1,36 @@
+ALGORITHM ocu
+VAR
+    num_of_words:INTEGER:=1;
+    num_of_caracters:INTEGER:=0;
+    num_of_voyelles :INTEGER:=0;
+    ch: CHAR;
+     i:INTEGER;
+       point:INTEGER;
+
+
+BEGIN
+ 
+
+
+ DO
+ 
+ Read(ch); 
+      
+      IF(ch=' ')
+       num_of_words :=num_of_words +1;
+       END_IF
+
+    
+ num_of_caracters := num_of_caracters + 1 ;
+
+
+        
+ IF((ch='a') or (ch='e') or (ch='i') or (ch='o') or (ch='y'))
+  num_of_voyelles=num_of_voyelles + 1;
+   END_IF
+  UNTIL(ch ='.')
+
+ Write ("number num_of_caracters" ,  num_of_caracters);
+ Write("number of words",num_of_words);
+ Write("numbers of voyelles ",num_of_voyelles); 
+ END
